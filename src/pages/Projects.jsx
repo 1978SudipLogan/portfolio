@@ -5,7 +5,7 @@ import EdTech from "../assets/edtech.png";
 import Password from "../assets/password.png";
 import ToDoList from "../assets/todolist.png";
 import Bookstore from "../assets/bookstore.png";
-import Bloomcare from "../assets/BloomCare.png";
+import Bloomcare from "../assets/Bloomcare.png";
 import Calculator from "../assets/Calculator.png";
 import ExpenseTracker from "../assets/ExpenseTracker.png";
 
