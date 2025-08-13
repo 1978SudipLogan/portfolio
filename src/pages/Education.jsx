@@ -53,12 +53,12 @@ const Education = () => {
               <div className="bg-cyan-900 text-white p-3 rounded-full shadow-md">
                 {edu.icon}
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white/60 group-hover:text-cyan-500 transition-colors duration-300">
+              <h3 className="text-2xl font-semibold text-gray-900  group-hover:text-cyan-500 transition-colors duration-300">
                 {edu.level}
               </h3>
             </div>
 
-            <div className="pl-2 space-y-3 text-gray-800 dark:text-gray-300 text-sm sm:text-base">
+            <div className="pl-2 space-y-3 text-gray-800  text-sm sm:text-base">
               <p>
                 <span className="font-semibold text-cyan-600">
                   🏫 Institution:{" "}
