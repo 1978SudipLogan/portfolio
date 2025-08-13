@@ -4,7 +4,7 @@ import Restaurant from "../assets/Restaurant.png";
 import EdTech from "../assets/edtech.png";
 import Password from "../assets/password.png";
 import ToDoList from "../assets/todolist.png";
-import Bookstore from "../assets/Bookstore.png";
+import Bookstore from "../assets/bookstore.png";
 import Bloomcare from "../assets/BloomCare.png";
 import Calculator from "../assets/Calculator.png";
 import ExpenseTracker from "../assets/ExpenseTracker.png";
