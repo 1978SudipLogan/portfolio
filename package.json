@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://1978SudipLogan.github.io/sudip_portfolio/",
+  "homepage": "https://1978SudipLogan.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.24.0",
