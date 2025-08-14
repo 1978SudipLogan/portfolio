@@ -81,7 +81,7 @@ const Home = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 pt-0">
+        <div className="flex flex-wrap justify-center gap-4 pt-0 relative top-4">
           <NavLink
             to="/projects"
             className="px-6 py-3 rounded-full border border-cyan-400 text-cyan-400 font-semibold transition-all duration-300 hover:bg-cyan-400 hover:text-black hover:scale-105"

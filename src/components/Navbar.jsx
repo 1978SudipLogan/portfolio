@@ -16,17 +16,13 @@ const links = [
   { name: "Skills", to: "/skills" },
   { name: "Projects", to: "/projects" },
   { name: "Experience", to: "/experience" },
-//  { name: "Testimonials", to: "/testimonials" },
+  //  { name: "Testimonials", to: "/testimonials" },
   { name: "Contact", to: "/contact" },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aiActive, setAiActive] = useState(false);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
 
   return (
     <>
@@ -64,15 +60,16 @@ const Navbar = () => {
           onClick={() => setAiActive((prev) => !prev)}
           className="fixed bottom-5 w-12 h-12 left-5 z-50 px-3 py-2 bg-cyan-400 text-white rounded-full shadow-lg hover:bg-cyan-600"
         >
-          {aiActive ? "🛑 " : "🎤 "}
+          {aiActive ? "🛑" : "🎤"}
         </button>
 
-        {/* Tooltip */}
         <span className="absolute left-6 top-[525px] z-10 translate-y-1/2 px-3 py-1 text-sm text-white bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-lg">
           {aiActive ? "Stop Voice Assistant" : "Start Voice Assistant"}
         </span>
       </div>
 
+      {/* Mount the VoiceAssistant here */}
+      <VoiceAssistant isActive={aiActive} />
       {/* Mobile Overlay */}
       {menuOpen && (
         <div
@@ -87,7 +84,7 @@ const Navbar = () => {
           menuOpen
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-4 scale-95 pointer-events-none"
-        } bg-sky-900/70 backdrop-blur-lg border border-cyan-500 rounded-2xl p-6 shadow-2xl`}
+        } bg-sky-600/70 backdrop-blur-lg border border-cyan-500 rounded-2xl p-6 shadow-2xl`}
       >
         <ul className="grid grid-cols-2 gap-4 items-center">
           {links.map((link, i) => (
@@ -96,8 +93,8 @@ const Navbar = () => {
               to={link.to}
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
-                `transition-all duration-500 ease-out text-cyan-400 font-semibold text-base py-2 px-4 w-full text-center rounded-xl hover:bg-indigo-800 hover:text-black shadow-sm ${
-                  isActive ? "bg-cyan-800/80 shadow-lg  text-black" : ""
+                `transition-all duration-500 ease-out text-black font-semibold text-base py-2 px-4 w-full text-center rounded-xl hover:bg-indigo-800 hover:text-black shadow-sm ${
+                  isActive ? "bg-cyan-500/80 shadow-lg  text-black " : ""
                 }`
               }
               style={{
